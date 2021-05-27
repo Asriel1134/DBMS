@@ -1,4 +1,4 @@
-package sample;
+package DBMS;
 
 public class Controller {
 }
