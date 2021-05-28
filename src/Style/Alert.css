@@ -1,0 +1,32 @@
+VBox{
+    /*-fx-background-image: url("/resources/background/background.jfif");*/
+}
+
+#title{
+    -fx-background-color: #aaaaaa40;
+}
+#title_text{
+    -fx-text-alignment: center;
+}
+#winClose{
+    -fx-background-image: url("/resources/icon/winClose.png");
+    -fx-background-size: 13;
+    -fx-background-position: center;
+    -fx-background-repeat:no-repeat;
+}
+#winClose:hover{
+    -fx-background-color: #76767644;
+}
+#winMinimize{
+    -fx-background-image: url("/resources/icon/winMinimize.png");
+    -fx-background-size: 12;
+    -fx-background-position: center;
+    -fx-background-repeat:no-repeat;
+}
+#winMinimize:hover{
+    -fx-background-color: #76767644;
+}
+
+TextArea{
+    -fx-background-color: #00000000;
+}

@@ -1,0 +1,51 @@
+#vbox{
+    -fx-background-image: url("/resources/background/background.jfif");
+}
+
+#title{
+    -fx-background-color: #aaaaaa40;
+}
+#title_text{
+    -fx-text-alignment: center;
+}
+#winClose{
+    -fx-background-image: url("/resources/icon/winClose.png");
+    -fx-background-size: 13;
+    -fx-background-position: center;
+    -fx-background-repeat:no-repeat;
+}
+#winClose:hover{
+    -fx-background-color: #76767644;
+}
+#winMinimize{
+    -fx-background-image: url("/resources/icon/winMinimize.png");
+    -fx-background-size: 12;
+    -fx-background-position: center;
+    -fx-background-repeat:no-repeat;
+}
+#winMinimize:hover{
+    -fx-background-color: #76767644;
+}
+#aside{
+    -fx-background-color: #ffffff77;
+}
+#signInBox{
+    -fx-background-color: #ffffff44;
+    -fx-background-radius: 4px;
+}
+#signInBox Label{
+    -fx-text-alignment: center;
+}
+#signInBox TextField{
+    -fx-background-color: #00000000;
+    -fx-border-width: 0 0 1 0;
+    -fx-border-color: black;
+}
+#signInBox PasswordField{
+    -fx-background-color: #00000000;
+    -fx-border-width: 0 0 1 0;
+    -fx-border-color: black;
+}
+#signInBox Button{
+    -fx-background-color: #00000000;
+}
