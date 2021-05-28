@@ -53,9 +53,14 @@
                      <Font size="14.0" />
                   </font>
                </PasswordField>
-               <Button layoutX="256.0" layoutY="359.0" mnemonicParsing="false" onMouseClicked="#signIn" text="Sign in" textFill="#06b0ff">
+               <Button layoutX="196.0" layoutY="356.0" mnemonicParsing="false" onMouseClicked="#signIn" text="Sign in" textFill="#06b0ff">
                   <font>
                      <Font name="System Bold" size="15.0" />
+                  </font>
+               </Button>
+               <Button layoutX="267.0" layoutY="357.0" mnemonicParsing="false" onMouseClicked="#signUp" text="Sign up" textFill="#06b0ff">
+                  <font>
+                     <Font name="System Bold Italic" size="14.0" />
                   </font>
                </Button>
             </children>

@@ -1,5 +1,7 @@
 package Stage.SignIn;
 
+import DBMS.SignIn;
+import DBMS.SignUp;
 import Stage.Alert.Alert;
 import javafx.scene.Scene;
 import javafx.scene.control.PasswordField;
@@ -48,6 +50,26 @@ public class SignInController {
         String pw = password.getText();
         if(un.equals("") || pw.equals("")){
             Alert alert = new Alert("Please enter the username and password.");
+        }else {
+            if (SignIn.signIn(un, pw)){
+                Alert alert = new Alert("Success");
+            }else {
+                Alert alert = new Alert("Incorrect username or password.");
+            }
+        }
+    }
+
+    public void signUp() throws Exception{
+        String un = username.getText();
+        String pw = password.getText();
+        if(un.equals("") || pw.equals("")){
+            Alert alert = new Alert("Please enter the username and password.");
+        }else {
+            if (SignUp.signUp(un, pw)){
+                Alert alert = new Alert("Registration success.");
+            }else {
+                Alert alert = new Alert("Username already exists.");
+            }
         }
     }
 }

@@ -30,3 +30,7 @@ VBox{
 TextArea{
     -fx-background-color: #00000000;
 }
+
+Button{
+    -fx-background-radius: 0px;
+}
