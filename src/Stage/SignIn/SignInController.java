@@ -3,6 +3,9 @@ package Stage.SignIn;
 import DBMS.SignIn;
 import DBMS.SignUp;
 import Stage.Alert.Alert;
+import Stage.SQLInput.SQLInputController;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
@@ -52,7 +55,12 @@ public class SignInController {
             Alert alert = new Alert("Please enter the username and password.");
         }else {
             if (SignIn.signIn(un, pw)){
-                Alert alert = new Alert("Success");
+                FXMLLoader loader = new FXMLLoader(getClass().getResource("/Stage/SQLInput/SQLInput.fxml"));
+                Parent root = loader.load();
+                SQLInputController controller = loader.getController();
+                controller.initChoiceBoxItems();
+                Stage stage = (Stage) title_Vbox.getScene().getWindow();
+                stage.setScene(new Scene(root));
             }else {
                 Alert alert = new Alert("Incorrect username or password.");
             }

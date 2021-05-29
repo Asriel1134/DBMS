@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox id="vbox" fx:id="title_Vbox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" stylesheets="@../../Style/SQLInput.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Stage.SQLInput.SQLInputController">
+   <children>
+      <AnchorPane id="title" prefHeight="39.0" prefWidth="755.0">
+         <children>
+            <Label id="winMinimize" layoutX="725.0" onMouseClicked="#winMinimize" prefHeight="38.0" prefWidth="38.0" />
+            <Label id="winClose" layoutX="763.0" onMouseClicked="#winClose" prefHeight="38.0" prefWidth="38.0" />
+            <Label layoutX="89.0" layoutY="10.0" text="DBMS" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="210.0" layoutY="1.0" onMouseDragged="#dragWindow" onMouseMoved="#setDragXY" prefHeight="38.0" prefWidth="515.0" />
+            <ChoiceBox id="DatabaseChoiceBox" fx:id="DatabaseChoiceBox" layoutX="426.0" layoutY="8.0" onContextMenuRequested="#setChoiceBoxItems" onMouseClicked="#setChoiceBoxItems" prefWidth="150.0" />
+            <Label layoutX="361.0" layoutY="12.0" text="Database:" />
+         </children>
+      </AnchorPane>
+      <HBox prefHeight="599.0" prefWidth="800.0">
+         <children>
+            <VBox id="aside" prefHeight="561.0" prefWidth="213.0">
+               <children>
+                  <AnchorPane prefHeight="629.0" prefWidth="211.0">
+                     <children>
+                        <Button id="SQLButton" layoutY="11.0" mnemonicParsing="false" prefHeight="68.0" prefWidth="211.0" styleClass="option" text="SQL        " AnchorPane.bottomAnchor="482.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="11.0">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Button>
+                        <Button id="HistoryButton" layoutY="92.0" mnemonicParsing="false" onMouseClicked="#changeHistory" prefHeight="68.0" prefWidth="211.0" styleClass="option" text="Histroy   ">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Button>
+                        <Button id="AboutButton" layoutY="479.0" mnemonicParsing="false" onMouseClicked="#changeAbout" prefHeight="68.0" prefWidth="211.0" styleClass="option" text="About     ">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+               </children></VBox>
+            <AnchorPane prefHeight="561.0" prefWidth="591.0">
+               <children>
+                  <TextField id="SQLInputTextFiled" fx:id="SQLInputTextFiled" layoutX="34.0" layoutY="27.0" prefHeight="38.0" prefWidth="446.0">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </TextField>
+                  <ListView id="SQLOutputList" fx:id="SQLOutputList" focusTraversable="false" layoutX="34.0" layoutY="99.0" prefHeight="436.0" prefWidth="523.0" />
+                  <Button id="Submit" layoutX="496.0" layoutY="27.0" mnemonicParsing="false" onMouseClicked="#submitSQL" prefHeight="39.0" prefWidth="62.0" text="Submit" />
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+   </children>
+</VBox>

@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 public class SignUp {
     public static boolean signUp(String username, String password) throws Exception{
-        File accountFile = new File("src/Database/account/account.txt");
+        File accountFile = new File("src/Account/account.txt");
         Scanner accountScanner = new Scanner(accountFile);
         ArrayList<String> accountList = new ArrayList<>();
         while (accountScanner.hasNextLine()){

@@ -1,0 +1,123 @@
+#vbox{
+    -fx-background-image: url("/resources/background/background.jfif");
+}
+
+#title{
+    -fx-background-color: #aaaaaa40;
+}
+#title_text{
+    -fx-text-alignment: center;
+}
+#winClose{
+    -fx-background-image: url("/resources/icon/winClose.png");
+    -fx-background-size: 13;
+    -fx-background-position: center;
+    -fx-background-repeat:no-repeat;
+}
+#winClose:hover{
+    -fx-background-color: #76767644;
+}
+#winMinimize{
+    -fx-background-image: url("/resources/icon/winMinimize.png");
+    -fx-background-size: 12;
+    -fx-background-position: center;
+    -fx-background-repeat:no-repeat;
+}
+#winMinimize:hover{
+    -fx-background-color: #76767644;
+}
+#aside{
+    -fx-background-color: #ffffff77;
+}
+#signInBox{
+    -fx-background-color: #ffffff44;
+    -fx-background-radius: 4px;
+}
+#signInBox Label{
+    -fx-text-alignment: center;
+}
+#signInBox TextField{
+    -fx-background-color: #00000000;
+    -fx-border-width: 0 0 1 0;
+    -fx-border-color: black;
+}
+#signInBox PasswordField{
+    -fx-background-color: #00000000;
+    -fx-border-width: 0 0 1 0;
+    -fx-border-color: black;
+}
+#signInBox Button{
+    -fx-background-color: #00000000;
+}
+#SQLInputTextFiled{
+    -fx-background-color: #00000000;
+    -fx-border-width: 0px 0px 1px 0px;
+    -fx-border-color: #74747488;
+}
+#SQLOutputList{
+    -fx-background-color: #ffffff88;
+}
+#Submit{
+    -fx-background-radius: 0px;
+    -fx-background-color: rgba(255, 255, 255, 0.6);
+    -fx-border-color: #000000;
+    -fx-border-width: 1px;
+}
+#Submit:hover{
+    -fx-background-color: rgba(255, 255, 255, 0.8);
+}
+#Submit:pressed{
+    -fx-background-color: rgb(187, 187, 187);
+}
+#DatabaseChoiceBox{
+    -fx-background-radius: 0px;
+    -fx-background-color: #ffffff88;
+}
+#DatabaseChoiceBox .context-menu{
+    -fx-background-color: #ffffff88;
+    -fx-min-width: 110px;
+}
+#SQLButton{
+    -fx-background-color: #00000000;
+    -fx-background-image: url("/resources/icon/SQL.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 25px 18px;
+    -fx-border-width: 0px 0px 0px 5px;
+    -fx-border-color: #000000;
+}
+#HistoryButton{
+    -fx-background-color: #00000000;
+    -fx-background-image: url("/resources/icon/History.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 25px 18px;
+}
+#AboutButton{
+    -fx-background-color: #00000000;
+    -fx-background-image: url("/resources/icon/About.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 28px 18px;
+    -fx-background-size: 30px;
+}
+#HistoryButton:hover{
+    -fx-background-color: rgba(193, 255, 250, 0.2);
+}
+#AboutButton:hover{
+    -fx-background-color: rgba(193, 255, 250, 0.2);
+}
+#HistoryButton:pressed{
+    -fx-background-color: rgba(193, 255, 250, 0.3);
+}
+#AboutButton:pressed{
+    -fx-background-color: rgba(193, 255, 250, 0.3);
+}
+
+#SQLOutputList .list-cell:even{
+    -fx-background-color: #ffffff00;
+}
+#SQLOutputList .list-cell:odd{
+    -fx-background-color: #ffffff44;
+}
+#SQLOutputList .list-cell{
+    -fx-pref-height: 30px;
+    -fx-font-size: 13;
+}

@@ -1,0 +1,65 @@
+#vbox{
+    -fx-background-image: url("/resources/background/background.jfif");
+}
+
+#title{
+    -fx-background-color: #aaaaaa40;
+}
+#title_text{
+    -fx-text-alignment: center;
+}
+#winClose{
+    -fx-background-image: url("/resources/icon/winClose.png");
+    -fx-background-size: 13;
+    -fx-background-position: center;
+    -fx-background-repeat:no-repeat;
+}
+#winClose:hover{
+    -fx-background-color: #76767644;
+}
+#winMinimize{
+    -fx-background-image: url("/resources/icon/winMinimize.png");
+    -fx-background-size: 12;
+    -fx-background-position: center;
+    -fx-background-repeat:no-repeat;
+}
+#winMinimize:hover{
+    -fx-background-color: #76767644;
+}
+#aside{
+    -fx-background-color: #ffffff77;
+}
+
+#SQLButton{
+    -fx-background-color: #00000000;
+    -fx-background-image: url("/resources/icon/SQL.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 25px 18px;
+}
+#HistoryButton{
+    -fx-background-color: #00000000;
+    -fx-background-image: url("/resources/icon/History.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 25px 18px;
+    -fx-border-width: 0px 0px 0px 5px;
+    -fx-border-color: #000000;
+}
+#AboutButton{
+    -fx-background-color: #00000000;
+    -fx-background-image: url("/resources/icon/About.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 28px 18px;
+    -fx-background-size: 30px;
+}
+#SQLButton:hover{
+    -fx-background-color: rgba(193, 255, 250, 0.2);
+}
+#AboutButton:hover{
+    -fx-background-color: rgba(193, 255, 250, 0.2);
+}
+#SQLButton:pressed{
+    -fx-background-color: rgba(193, 255, 250, 0.3);
+}
+#AboutButton:pressed{
+    -fx-background-color: rgba(193, 255, 250, 0.3);
+}
