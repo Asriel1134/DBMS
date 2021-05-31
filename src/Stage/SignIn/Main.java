@@ -16,7 +16,7 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("SignIn.fxml"));
-        primaryStage.setTitle("Sign in");
+        primaryStage.setTitle("DBMS");
         primaryStage.getIcons().add(new Image("/resources/icon/icon.png"));
         primaryStage.setResizable(false);
         primaryStage.initStyle(StageStyle.UNDECORATED);

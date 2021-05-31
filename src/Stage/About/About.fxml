@@ -5,6 +5,10 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
 <?import javafx.scene.text.Font?>
 
 <VBox id="vbox" fx:id="title_Vbox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" stylesheets="@../../Style/About.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Stage.About.AboutController">
@@ -45,7 +49,63 @@
                      </children>
                   </AnchorPane>
                </children></VBox>
-            <AnchorPane prefHeight="561.0" prefWidth="591.0" />
+            <AnchorPane prefHeight="561.0" prefWidth="591.0">
+               <children>
+                  <Circle fill="#2197ff00" layoutX="295.0" layoutY="282.0" radius="144.0" strokeType="INSIDE">
+                     <stroke>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="0.5131579041481018" green="0.5131579041481018" blue="0.5131579041481018" opacity="0.3400000035762787" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </stroke>
+                  </Circle>
+                  <AnchorPane layoutX="195.0" layoutY="51.0" prefHeight="200.0" prefWidth="200.0" styleClass="bg">
+                     <children>
+                        <Label layoutX="53.0" layoutY="66.0" text="刘秉智">
+                           <font>
+                              <Font name="FangSong" size="32.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="89.0" layoutY="28.0" text="组长" />
+                        <Label layoutX="68.0" layoutY="143.0" text="计工本1902" />
+                        <Label layoutX="58.0" layoutY="165.0" text="201911010237" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="55.0" layoutY="303.0" prefHeight="200.0" prefWidth="200.0" styleClass="bg">
+                     <children>
+                        <Label layoutX="53.0" layoutY="66.0" text="丰树欣">
+                           <font>
+                              <Font name="FangSong" size="32.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="89.0" layoutY="28.0" text="组员" />
+                        <Label layoutX="68.0" layoutY="143.0" text="计工本1901" />
+                        <Label layoutX="58.0" layoutY="165.0" text="201911010225" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="339.0" layoutY="303.0" prefHeight="200.0" prefWidth="200.0" styleClass="bg">
+                     <children>
+                        <Label layoutX="53.0" layoutY="66.0" text="杨煜琦">
+                           <font>
+                              <Font name="FangSong" size="32.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="89.0" layoutY="28.0" text="组员" />
+                        <Label layoutX="68.0" layoutY="143.0" text="计工本1901" />
+                        <Label layoutX="58.0" layoutY="165.0" text="201911010221" />
+                     </children>
+                  </AnchorPane>
+               </children></AnchorPane>
          </children>
       </HBox>
    </children>

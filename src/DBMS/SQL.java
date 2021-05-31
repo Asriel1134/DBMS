@@ -1,5 +1,7 @@
 package DBMS;
 
+import java.io.File;
+
 public class SQL {
     public static String SQLHandler(String SQL, String database) throws Exception{
         if (SQL.equals("create database student;")){
@@ -59,6 +61,77 @@ public class SQL {
             else
                 return "Insert failed.";
         }
+
+        if (SQL.equals("select * from stud;")){
+            if (database == null)
+                return "Please select a database.";
+
+            String tableName = "stud";
+
+            String pathName = "src/Database/" + database + "/" + tableName + ".dbf";
+            File table = new File(pathName);
+            if (!table.exists())
+                return "Table " + tableName + " does not exist.";
+
+            Stage.Select.Select select = new Stage.Select.Select(Select.selectAll(database ,tableName));
+            return "Select successfully.";
+        }
+
+        if (SQL.equals("select name from stud where field='id' and value='1';")){
+            if (database == null)
+                return "Please select a database.";
+
+            String tableName = "stud";
+
+            String pathName = "src/Database/" + database + "/" + tableName + ".dbf";
+            File table = new File(pathName);
+            if (!table.exists())
+                return "Table " + tableName + " does not exist.";
+
+            String[][] requirement = {
+                    {"id", "1"},                //可以有多个条件
+            };
+            String[] attribute = {"name"};      //可以获取多个属性  若 attribute = {"*"} 则获取所有属性
+
+            Stage.Select.Select select = new Stage.Select.Select(Select.select(database, tableName, requirement, attribute));
+            return "Select successfully.";
+        }
+
+        if (SQL.equals("update stud set value='李同学' where field='name' and value='刘同学';")){
+            if (database == null)
+                return "Please select a database.";
+
+            String tableName = "stud";
+            String oldValue = "刘同学";
+            String newValue = "李同学";
+            String attribute = "name";
+
+            int flag = Update.update(database, tableName, attribute, oldValue, newValue);
+            if (flag == -1)
+                return "Table " + tableName + " does not existed.";
+            else if (flag == 0)
+                return "Update successfully.";
+            else
+                return "Update failed.";
+        }
+
+        if (SQL.equals("delete from stud where field='id' and value='1';")){
+            if (database == null)
+                return "Please select a database.";
+
+            String tableName = "stud";
+            String value = "1";
+            String attribute = "id";
+
+            int flag = Delete.delete(database, tableName, attribute, value);
+            if (flag == -1)
+                return "Table " + tableName + " does not existed.";
+            else if (flag == 0)
+                return "Update successfully.";
+            else
+                return "Update failed.";
+        }
+
         return "Error.";
     }
 }

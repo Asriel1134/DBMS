@@ -1,6 +1,7 @@
 package Stage.SQLInput;
 
 import DBMS.SQL;
+import DBMS.Test;
 import Stage.Alert.Alert;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -71,7 +72,7 @@ public class SQLInputController {
         if (SQLInputTextFiled.getText().equals("")) {
             Alert alert = new Alert("Please enter the SQL statement.");
         }else
-            OutputList.add(SQL.SQLHandler(SQLInputTextFiled.getText(), DatabaseChoiceBox.getValue()));
+            OutputList.add(Test.SQLHandler(SQLInputTextFiled.getText(), DatabaseChoiceBox.getValue()));
             SQLOutputList.setItems(OutputList);
     }
 

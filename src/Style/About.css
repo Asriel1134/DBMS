@@ -63,3 +63,7 @@
 #HistoryButton:pressed{
     -fx-background-color: rgba(193, 255, 250, 0.3);
 }
+
+.bg{
+    -fx-background-color: #ffffff99;
+}

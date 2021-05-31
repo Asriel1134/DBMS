@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="title_Vbox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="592.0" prefWidth="603.0" stylesheets="@../../Style/Select.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Stage.Select.SelectController">
+   <children>
+      <AnchorPane id="title" onMouseDragged="#dragWindow" onMouseMoved="#setDragXY" prefHeight="38.0" prefWidth="389.0">
+         <children>
+            <Label id="winClose" layoutX="565.0" layoutY="1.0" onMouseClicked="#winClose" prefHeight="38.0" prefWidth="38.0" />
+            <Label id="winMinimize" layoutX="527.0" layoutY="1.0" onMouseClicked="#winMinimize" prefHeight="38.0" prefWidth="38.0" />
+            <Label id="title_text" layoutX="257.0" layoutY="10.0" text="Select Result" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="606.0" prefWidth="603.0">
+         <children>
+            <TableView id="selectResultTable" fx:id="selectResultTable" layoutX="25.0" layoutY="17.0" prefHeight="522.0" prefWidth="559.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

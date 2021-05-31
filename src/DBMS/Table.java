@@ -22,6 +22,19 @@ public class Table {
         }
     }
 
+    public static int dropTable(String databaseName, String tableName) throws Exception{
+        String pathName = "src/Database/" + databaseName + "/" + tableName + ".dbf";
+        File table = new File(pathName);
+        if (!table.exists())
+            return 1;   //not Existed
+
+        else {
+            if (table.delete())
+                return 0;
+            else return -1;
+        }
+    }
+
     public static int insert(String[] attributeNames, String[] value, String databaseName, String tableName) throws Exception{
         File table = new File("src/Database/" + databaseName + "/" + tableName + ".dbf");
         if (!table.exists())
